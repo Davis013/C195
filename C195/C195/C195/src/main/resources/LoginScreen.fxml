@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davis.c195.Controllers.Login">
+   <children>
+      <Text layoutX="299.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Scheduler">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="UsernameLabel" layoutX="158.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" />
+      <Text fx:id="PasswordLabel" layoutX="162.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <TextField fx:id="UsernameText" layoutX="310.0" layoutY="211.0" prefHeight="25.0" prefWidth="229.0" />
+      <Button fx:id="LoginButton" layoutX="588.0" layoutY="459.0" mnemonicParsing="false" onAction="#LoginButton" text="Login" />
+      <Button fx:id="ExitButton" layoutX="673.0" layoutY="459.0" mnemonicParsing="false" onAction="#ExitButton" text="Exit" />
+      <TextArea fx:id="Locationbox" editable="false" layoutX="225.0" layoutY="321.0" prefHeight="98.0" prefWidth="401.0" />
+      <PasswordField fx:id="PasswordText" layoutX="311.0" layoutY="263.0" prefHeight="25.0" prefWidth="229.0" />
+   </children>
+</AnchorPane>

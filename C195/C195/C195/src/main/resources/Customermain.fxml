@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davis.c195.Controllers.Customermain">
+   <children>
+      <Button fx:id="Addbutton" layoutX="406.0" layoutY="451.0" mnemonicParsing="false" onAction="#addButtonAction" text="Add" />
+      <Button fx:id="ModifyButton" layoutX="497.0" layoutY="451.0" mnemonicParsing="false" onAction="#modifyButtonAction" text="Modify" />
+      <Button fx:id="DeleteButton" layoutX="606.0" layoutY="451.0" mnemonicParsing="false" onAction="#deleteButtonAction" text="Delete" />
+      <Button fx:id="CancelButton" layoutX="724.0" layoutY="515.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" />
+      <TableView fx:id="CustomerMainTable" layoutX="183.0" layoutY="123.0" prefHeight="298.0" prefWidth="485.0">
+        <columns>
+          <TableColumn fx:id="CustomerID" prefWidth="197.0" text="Customer ID" />
+          <TableColumn fx:id="CustomerName" prefWidth="287.0" text="Customer Name" />
+        </columns>
+      </TableView>
+      <Text layoutX="343.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Home">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

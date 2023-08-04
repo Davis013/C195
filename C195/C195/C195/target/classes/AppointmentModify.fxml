@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davis.c195.Controllers.Appointmentmodify">
+   <children>
+      <Text layoutX="389.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Appointment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="91.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment ID" />
+      <Text layoutX="360.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" />
+      <Text layoutX="614.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" />
+      <Text layoutX="112.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+      <Text layoutX="348.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="612.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+      <Text layoutX="102.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" />
+      <Text layoutX="352.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
+      <Text layoutX="610.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" />
+      <Text layoutX="42.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Type" />
+      <Text layoutX="352.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time" />
+      <Text layoutX="609.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time" />
+      <Button fx:id="UpdateButton" layoutX="625.0" layoutY="523.0" mnemonicParsing="false" onAction="#updateButton" text="Update" />
+      <Button fx:id="CancelButton" layoutX="735.0" layoutY="523.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+      <TextField fx:id="AppointmentID" alignment="CENTER_RIGHT" editable="false" layoutX="199.0" layoutY="158.0" opacity="0.5" text="Auto Gen-Disabled">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="CustomerID" layoutX="445.0" layoutY="158.0" onKeyPressed="#customerIDKeyPressed" />
+      <TextField fx:id="UserID" layoutX="666.0" layoutY="158.0" onKeyPressed="#userIDKeyPressed" />
+      <TextField fx:id="Title" layoutX="155.0" layoutY="231.0" onKeyPressed="#titleKeyPressed" />
+      <TextField fx:id="Description" layoutX="426.0" layoutY="231.0" onKeyPressed="#descriptionKeyPressed" />
+      <TextField fx:id="Location" layoutX="666.0" layoutY="231.0" onKeyPressed="#locationKeyPressed" />
+      <ComboBox fx:id="ContactBox" layoutX="164.0" layoutY="298.0" onAction="#handleContact" prefWidth="150.0" />
+      <DatePicker fx:id="StartDate" layoutX="419.0" layoutY="298.0" />
+      <DatePicker fx:id="EndDate" layoutX="666.0" layoutY="298.0" />
+      <ComboBox fx:id="AppointmentType" layoutX="155.0" layoutY="373.0" onAction="#handleAppointmentType" prefWidth="150.0" />
+      <ComboBox fx:id="StartTime" layoutX="426.0" layoutY="373.0" onAction="#handleStartTime" prefWidth="150.0" />
+      <ComboBox fx:id="EndTime" layoutX="678.0" layoutY="373.0" onAction="#handleEndTime" prefWidth="150.0" />
+   </children>
+</AnchorPane>

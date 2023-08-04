@@ -1,0 +1,26 @@
+# WGU C195 Software 2
+
+Java project for WGU C195 Software 2 Advanced Java Concepts
+
+Title: Appointment Scheduler
+
+Purpose: The purpose of this application it to create an appointment scheduler that will pull information from the a SQL database and meet the business requirements of our client organization.
+
+Author: Brandon Davis    Student ID 010008848
+
+Contact information: bdav734@wgu.edu
+
+Student Application Version: 1.0
+
+Date: 30 MAY 2023
+
+IDE version: IntelliJ Community Edition 2023.1.1
+
+JDK version: Azul 17.0.7 using Javafx SDK 17.0.7
+
+Directions: Open application file to the Main.java file, from there you should be able to run the build and launch the application. (Be sure that the JDBC connector has the correct information for your database
+or you will not be able to pull data from the database to allow the application to run properly.)
+
+Reports Description:
+
+MySQL connector version: 8.0.25
